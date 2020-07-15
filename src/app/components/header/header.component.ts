@@ -11,11 +11,12 @@ export class HeaderComponent implements OnInit {
   speed: number;
   counter: number;
   text: string;
-  // welcomeTextArray: any;
+  welcomeTextArray: any;
   constructor() {
-    // this.welcomeTextArray = {
-    //   text1: 
-    // };
+    this.welcomeTextArray = {
+      text1: "Hi there! 👋🏻 I'm Diego Herrera",
+      text2: "Frontend Developer"
+    };
     this.text = 'typewriter';
     console.log('text=>', this.text.length);
     this.counter = 0;
@@ -29,17 +30,24 @@ export class HeaderComponent implements OnInit {
 
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('open');
-      console.log('navLinks=>', navLinks);
       links.forEach((link) => {
-        console.log('link=>', link);
         link.classList.toggle('fade');
       });
     });
-    // const numbers = interval(100);
-    // const takeFourNumbers = numbers.pipe(take(this.text.length));
-    // takeFourNumbers.subscribe((x) => {
-    //   console.log('Next: ', x);
-    //   document.getElementById('demo').innerHTML += this.text.charAt(x);
-    // });
+    this.typewriter();
+  }
+
+  typewriter() {
+    const numbers = interval(100);
+    const title = numbers.pipe(take(this.welcomeTextArray.text1.length));
+    const subtitle = numbers.pipe(take(this.welcomeTextArray.text1.length));
+    title.subscribe((x) => {
+      // console.log('Next: ', x);
+      document.getElementById('title').innerHTML += this.welcomeTextArray.text1.charAt(x);
+    });
+    subtitle.subscribe((x) => {
+      // console.log('Next: ', x);
+      document.getElementById('subtitle').innerHTML += this.welcomeTextArray.text2.charAt(x);
+    });
   }
 }

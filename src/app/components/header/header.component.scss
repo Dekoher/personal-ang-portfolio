@@ -71,6 +71,10 @@ nav {
   .text {
     text-align: center;
     position: absolute;
+
+    .presentation {
+      font-size: 60px;
+    }
   }
 }
 
@@ -136,5 +140,11 @@ nav {
   .landing {
     position: relative;
     background-position: 25% 55%;
+
+    .text {
+      .presentation {
+        font-size: 25px;
+      }
+    }
   }
 }
