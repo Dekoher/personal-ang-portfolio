@@ -1,0 +1,107 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../../assets/uno.jpeg);
+  background-size: cover;
+  background-position: center 35%;
+  color: #fff;
+
+  .intro {
+    background-color: rgba(3, 83, 164, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+
+    .presentation {
+      font-size: 60px;
+      width: min-content;
+    }
+    
+    .blinking-cursor {
+      position: absolute;
+      right: 1%;
+      top: 60%;
+      font-weight: 100;
+      font-size: 35px;
+      color: #fff;
+      -webkit-animation: 1s blink step-end infinite;
+      -moz-animation: 1s blink step-end infinite;
+      -ms-animation: 1s blink step-end infinite;
+      -o-animation: 1s blink step-end infinite;
+      animation: 1s blink step-end infinite;
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .landing {
+    .text {
+      .presentation {
+        width: 100%;
+      }
+
+      .blinking-cursor {
+        left: 100%;
+        top: 20%;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-ms-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
