@@ -14,7 +14,7 @@
     top: 0;
     left: 0px;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     opacity: 0.9;
   }
@@ -28,6 +28,7 @@
     .presentation {
       font-size: 60px;
       width: min-content;
+      text-shadow: 5px 5px 5px #000;
     }
     
     .blinking-cursor {
@@ -37,6 +38,7 @@
       font-weight: 100;
       font-size: 35px;
       color: #fff;
+      text-shadow: 5px 5px 10px #000;
       -webkit-animation: 1s blink step-end infinite;
       -moz-animation: 1s blink step-end infinite;
       -ms-animation: 1s blink step-end infinite;
