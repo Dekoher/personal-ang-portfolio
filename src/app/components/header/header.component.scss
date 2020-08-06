@@ -54,37 +54,6 @@ nav {
   font-size: 16px;
 }
 
-.landing {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../../../assets/uno.jpeg);
-  background-size: cover;
-  background-position: 25% 55%;
-  color: #fff;
-
-  .intro {
-    background-color: rgba(3, 83, 164, 0.85);
-    position: absolute;
-    top: 0;
-    left: 0px;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.9;
-  }
-
-  .text {
-    text-align: center;
-    position: absolute;
-
-    .presentation {
-      font-size: 60px;
-    }
-  }
-}
-
 
 @media screen and (max-width: 768px) {
   .hamburger-container {
@@ -104,62 +73,10 @@ nav {
   }
 
   .nav-links {
-    overflow: hidden;
-    position: fixed;
-    background: rgb(3, 83, 164);
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(30px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-
-    .item {
-      a {
-        color: #fff;
-        font-size: 25px;
-      }
-    }
-
-    li:nth-child(1) {
-      transition: all 0.5s ease 0.1s;
-    }
-
-    li:nth-child(2) {
-      transition: all 0.5s ease 0.2s;
-    }
-
-    li:nth-child(3) {
-      transition: all 0.5s ease 0.3s;
-    }
-  }
-
-  .nav-links.open {
-    clip-path: circle(1500px at 90% -10%);
-    -webkit-clip-path: circle(1500px at 90% -10%);
-    pointer-events: all;
-    background: #1d3557;
-  }
-
-  .hamburger-container.open {
-    .line {
-      background: #fff;
-    }
+    display: none;
   }
 
   li.fade {
     opacity: 1;
-  }
-
-  .landing {
-    position: relative;
-    background-position: 25% 55%;
-
-    .text {
-      .presentation {
-        font-size: 25px;
-      }
-    }
   }
 }
