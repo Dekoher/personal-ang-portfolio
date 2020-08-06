@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentComponent } from './components/content/content.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
