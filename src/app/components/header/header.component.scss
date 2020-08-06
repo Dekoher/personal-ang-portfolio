@@ -1,7 +1,5 @@
 nav {
   height: 13vh;
-  // background-color: transparent;
-  // background: #fff;
   box-shadow: 0 0.1875rem 0.625rem -0.1875rem #000;
   position: fixed;
   right: 0;
@@ -119,6 +117,7 @@ nav {
 
     .item {
       a {
+        color: #fff;
         font-size: 25px;
       }
     }
@@ -141,6 +140,12 @@ nav {
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
     background: #1d3557;
+  }
+
+  .hamburger-container.open {
+    .line {
+      background: #fff;
+    }
   }
 
   li.fade {
