@@ -14,7 +14,7 @@ export class ComingSoonComponent implements OnInit {
   welcomeTextArray: any;
   constructor() {
     this.welcomeTextArray = {
-      text1: "Coming soon...",
+      text1: "New things are comming...",
       text2: "|",
     };
     this.text = 'typewriter';
